@@ -57,7 +57,9 @@ const Home = () => {
           <button onClick={handleResumeDownload} className="get-resume">
             📄 Get Resume
           </button>
-         <button><Link to="projects">🚀 Projects</Link> </button>
+          <button>
+            <Link to="projects">🚀 Projects</Link>{" "}
+          </button>
         </div>
       </div>
 
