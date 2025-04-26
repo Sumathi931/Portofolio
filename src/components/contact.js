@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
-import './contact.css';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
+import "./contact.css";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const ContactME = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -20,14 +20,19 @@ const ContactME = () => {
     console.log(formData);
 
     emailjs
-      .send('service_gsfh45j', 'template_y64dt6c', formData, '6erlan7TF6QEvupv9')
+      .send(
+        "service_gsfh45j",
+        "template_y64dt6c",
+        formData,
+        "6erlan7TF6QEvupv9"
+      )
       .then((response) => {
-        console.log('Email sent successfully!', response.status, response.text);
-        setFormData({ name: '', email: '', message: '' });
-        alert('Submitted successfully');
+        console.log("Email sent successfully!", response.status, response.text);
+        setFormData({ name: "", email: "", message: "" });
+        alert("Submitted successfully");
       })
       .catch((err) => {
-        console.error('Failed to send email. Error:', err);
+        console.error("Failed to send email. Error:", err);
       });
   };
 
@@ -65,7 +70,9 @@ const ContactME = () => {
               required
             />
           </div>
-          <button type="submit" className="submit-btn">Submit</button>
+          <button type="submit" className="submit-btn">
+            Submit
+          </button>
         </form>
       </div>
 
@@ -74,10 +81,18 @@ const ContactME = () => {
           <p>“Your next big thing starts here.”</p>
         </div>
         <div className="social-icons">
-          <a href="https://github.com/Sumathi931" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/Sumathi931"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaGithub size={40} />
           </a>
-          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaLinkedin size={40} />
           </a>
         </div>

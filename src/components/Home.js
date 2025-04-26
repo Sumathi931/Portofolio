@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./home.css";
 import helloImg from "../images/hello.avif";
+import { Link } from "react-scroll";
 
 const roles = [
   "Full Stack Developer",
   "Frontend Developer",
-  "Backend Developer"
+  "Backend Developer",
 ];
 
 const Home = () => {
@@ -56,12 +57,11 @@ const Home = () => {
           <button onClick={handleResumeDownload} className="get-resume">
             📄 Get Resume
           </button>
-          <button>🚀 Projects</button>
+         <button><Link to="projects">🚀 Projects</Link> </button>
         </div>
       </div>
 
       <div className="home-right">
-     
         <img src={helloImg} alt="Hello waving" className="waving-img" />
       </div>
     </div>

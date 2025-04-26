@@ -1,132 +1,130 @@
 .experience-section {
-    padding: 60px 20px;
-    background: linear-gradient(to right, #f8f9fa, #e0eafc);
-    text-align: center;
-    min-height: 100vh;
-   
+  padding: 60px 20px;
+  background: linear-gradient(to right, #f8f9fa, #e0eafc);
+  text-align: center;
+  min-height: 100vh;
+}
+
+.experience-heading {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #2c3e50;
+  scroll-margin-top: 80px;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.experience-item {
+  background: #fff;
+  border-left: 4px solid #0077cc;
+  padding: 20px 30px 40px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  animation: slideInUp 0.8s ease forwards;
+  opacity: 0;
+  position: relative;
+}
+
+.experience-item:nth-child(1),
+.experience-item:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.experience-content {
+  margin-bottom: 20px;
+}
+
+.role-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.duration {
+  font-size: 0.95rem;
+  color: #777;
+  margin-top: 4px;
+}
+
+.company-circle {
+  width: 80px;
+  height: 80px;
+  background-color: #0077cc;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.85rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: floatPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes floatPulse {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0) scale(1);
   }
-  
-  .experience-heading {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #2c3e50;
-    scroll-margin-top:80px;
-    animation: fadeInDown 1s ease-in-out;
+  50% {
+    transform: translateX(-50%) translateY(-6px) scale(1.05);
   }
-  
-  .experience-timeline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-  
-  .experience-item {
-    background: #fff;
-    border-left: 4px solid #0077cc;
-    padding: 20px 30px 40px;
-    width: 90%;
-    max-width: 500px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    animation: slideInUp 0.8s ease forwards;
+}
+
+.arrow-label {
+  font-size: 0.85rem;
+  color: #0077cc;
+  font-weight: 600;
+}
+
+.arrow-down {
+  width: 2px;
+  height: 30px;
+  background-color: #0077cc;
+  position: relative;
+}
+
+.arrow-down::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: -4px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #0077cc;
+}
+
+@keyframes fadeInDown {
+  from {
     opacity: 0;
-    position: relative;
+    transform: translateY(-30px);
   }
-  
-  .experience-item:nth-child(1),
-  .experience-item:nth-child(3) {
-    animation-delay: 0.2s;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .experience-content {
-    margin-bottom: 20px;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
   }
-  
-  .role-title {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #333;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .duration {
-    font-size: 0.95rem;
-    color: #777;
-    margin-top: 4px;
-  }
-  
-  .company-circle {
-    width: 80px;
-    height: 80px;
-    background-color: #0077cc;
-    color: #fff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 0.85rem;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    animation: floatPulse 2.5s ease-in-out infinite;
-  }
-  
-  @keyframes floatPulse {
-    0%, 100% {
-      transform: translateX(-50%) translateY(0) scale(1);
-    }
-    50% {
-      transform: translateX(-50%) translateY(-6px) scale(1.05);
-    }
-  }
-  
-  
-  .arrow-label {
-    font-size: 0.85rem;
-    color: #0077cc;
-    font-weight: 600;
-  }
-  
-  .arrow-down {
-    width: 2px;
-    height: 30px;
-    background-color: #0077cc;
-    position: relative;
-  }
-  
-  .arrow-down::after {
-    content: '';
-    position: absolute;
-    bottom: -6px;
-    left: -4px;
-    width: 0;
-    height: 0;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-top: 6px solid #0077cc;
-  }
-  
-  @keyframes fadeInDown {
-    from {
-      opacity: 0;
-      transform: translateY(-30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes slideInUp {
-    from {
-      opacity: 0;
-      transform: translateY(40px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
+}

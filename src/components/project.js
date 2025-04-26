@@ -18,10 +18,10 @@ const projects = [
       "A full-stack e-commerce application using MERN stack with features like user authentication, shopping cart, and Stripe integration. Explore a wide range of products, manage your cart, and experience a seamless checkout process.",
   },
   {
-    title: "Weather App",
+    title: "Daily Planner",
     image: dp,
     description:
-      "A weather forecasting app using OpenWeatherMap API, built with React and a responsive UI using Bootstrap. Get real-time weather updates, hourly forecasts, and detailed information about temperature, humidity, wind speed, and more for any location.",
+      "A simple and efficient task management application built using React.js and CSS. This app allows users to add, edit and delete. It focuses on clean design, user-friendly interactions, and component-based architecture.",
   },
 ];
 
