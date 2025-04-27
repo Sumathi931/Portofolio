@@ -47,7 +47,10 @@
 .form-group textarea {
   background: transparent;
   border: none;
-  border-bottom: 1px solid #393747;
+  width: 80%;
+  margin:0 auto;
+  box-shadow: 0 5px 7px rgb(191, 191, 199);
+  border-bottom: 0.7px solid #b0afb7;
   padding: 10px 5px;
   font-size: 1rem;
   color: #333;
@@ -65,7 +68,7 @@
   margin-top: 20px;
   align-self: center;
   padding: 12px 30px;
-  background: linear-gradient(135deg, #00ff7f, #00e5ff, #eaff00);
+  background: linear-gradient(135deg, #4d5250, #5fa5ad, #808665);
   background-size: 300% 300%;
   color: #000;
   border: none;
@@ -77,6 +80,7 @@
 }
 
 .submit-btn:hover {
+  background: linear-gradient(135deg, #4d5250, #5fa5ad, #453947);
   background-position: right center;
   color: #fff;
   transform: scale(1.05);
@@ -116,14 +120,13 @@
 @media (max-width: 768px) {
   .contact-main-container {
     flex-direction: column;
-    padding: 30px 20px;
+    padding: 10px 20px;
     gap: 40px;
   }
 
   .contact-left {
-    width: 75%;
+    width: 90%;
   }
-
   .submit-btn {
     margin-left: 15px;
   }

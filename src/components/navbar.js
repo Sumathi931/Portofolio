@@ -40,7 +40,7 @@ function Nav() {
         <li>
           <Link
             to="contact"
-            offset={70}
+            offset={-20}
             smooth={true}
             duration={500}
             onClick={handleLinkClick}
@@ -73,7 +73,7 @@ function Nav() {
         <li>
           <Link
             to="projects"
-            offset={100}
+            offset={-10}
             smooth={true}
             duration={500}
             onClick={handleLinkClick}
