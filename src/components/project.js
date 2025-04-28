@@ -12,13 +12,13 @@ const projects = [
     description:
       "A responsive personal portfolio website built using React.js and CSS. The site showcases my work, skills, and contact information in a clean and organized layout. It features smooth navigation, modern styling, and reusable React components for scalability and maintainability.",
   },
-  {
-    title: "E-Commerce App",
-    image: j1,
-    link:"https://dailyplanner-sumathi.vercel.app/",
-    description:
-      "A full-stack e-commerce application using MERN stack with features like user authentication, shopping cart, and Stripe integration. Explore a wide range of products, manage your cart, and experience a seamless checkout process.",
-  },
+  // {
+  //   title: "E-Commerce App",
+  //   image: j1,
+  //   link:"https://dailyplanner-sumathi.vercel.app/",
+  //   description:
+  //     "A full-stack e-commerce application using MERN stack with features like user authentication, shopping cart, and Stripe integration. Explore a wide range of products, manage your cart, and experience a seamless checkout process.",
+  // },
   {
     title: "Daily Planner",
     image: dp,
