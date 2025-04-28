@@ -8,7 +8,7 @@ const projects = [
   {
     title: "Portfolio Website",
     image: PF,
-    link:"https://sumathi-portofolio.vercel.app/
+    link:"https://sumathi-portofolio.vercel.app/",
     description:
       "A responsive personal portfolio website built using React.js and CSS. The site showcases my work, skills, and contact information in a clean and organized layout. It features smooth navigation, modern styling, and reusable React components for scalability and maintainability.",
   },
